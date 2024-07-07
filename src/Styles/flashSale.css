@@ -1,0 +1,16 @@
+/* Rules sharable by both flashSale containers*/
+.flashSale{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Implementation of an image specific to flashSale-1 */
+#flashSale-1{
+    background-image: url('/public/Resources/Images/FlashSale-1.png');
+}
+
+/* Implementation of an image specific to flashSale-2 */
+#flashSale-2{
+    background-image: url('/public/Resources/Images/FlashSale-2.png');
+}
