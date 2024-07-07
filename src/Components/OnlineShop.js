@@ -7,7 +7,7 @@ import FlashSale from "./FlashSale";
 
 const OnlineShop = () => {
     return(
-        <div className="ui container">
+        <div>
             <FlashSale />
         </div>
     );
