@@ -5,12 +5,14 @@
 
 import FlashSale from "./FlashSale";
 import Nav from "./Nav";
+import Products from "./Products";
 
 const OnlineShop = () => {
     return(
         <div>
             <Nav />
             <FlashSale />
+            <Products />
         </div>
     );
 };
