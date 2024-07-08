@@ -2,6 +2,7 @@
  * This Component Contains all the options to be used in the navigation within the application. 
 */ 
 
+import { Link } from "react-router-dom";
 import SmallScreenMenu from "./SmallScreenMenu";
 
 const Nav = () => {
@@ -34,24 +35,26 @@ const Nav = () => {
                     </div>
                     <div className="item text-[24px] right-menu-item">
                         <a href="/">
-                            <i className="heart icon"></i>
+                            <img src="./Resources/Images/Icons/favourite.svg" alt="favourite"/>
                         </a>
                     </div>
                     <div className="item text-[24px] right-menu-item">
                         <a href="/">
-                            <i className="bell icon"></i>
+                            <img src="./Resources/Images/Icons/notifications.svg" alt="notification"/>
                         </a>
                     </div>
                     <div className="item text-[24px] right-menu-item">
                         <a href="/">
-                            <i className="user icon"></i>
+                            <img src="./Resources/Images/Icons/user.svg" alt="user"/>
                         </a>
                     </div>
-                    <div className="item text-[24px] right-menu-item">
-                        <a href="/">
-                            <i className="red shopping cart icon"></i>
-                        </a>
-                    </div>                 
+                    <Link to="/checkout">
+                        <div className="item text-[24px] right-menu-item">
+                            <a href="/">
+                                <img src="./Resources/Images/Icons/cart.svg" alt="cart"/>
+                            </a>
+                        </div> 
+                    </Link>                
                 </div>
                 <div className="menu ml-[0px]">
                     <div className="item" id="hidden-display">

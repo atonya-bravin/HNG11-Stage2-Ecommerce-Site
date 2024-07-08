@@ -6,10 +6,14 @@ import "semantic-ui-css/semantic.min.css";
 import './Styles/index.css';
 import './Styles/flashSale.css';
 import './Styles/menu.css';
+import { RouterProvider } from 'react-router-dom';
+import router from './Routes/RoutesConfig';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+    <RouterProvider router={router}>
+        <App />
+    </RouterProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

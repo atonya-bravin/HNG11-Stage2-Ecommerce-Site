@@ -1,7 +1,7 @@
 const Billing = () => {
     return(
-        <div class="bg-gray-100 h-screen py-8">
-            <div class="container mx-auto px-4">
+        <div class="bg-gray-100 py-8">
+            <div class="ui container mx-auto px-4">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="md:w-3/4">
                     <div class="w-full px-6 py-8 md:p-8">

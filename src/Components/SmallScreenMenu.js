@@ -3,6 +3,7 @@
     This component contains the menu that we see in the small screens.
 */
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { DropdownMenu, DropdownItem, Dropdown } from 'semantic-ui-react';
 
 const SmallScreenMenu = () => (
@@ -30,6 +31,11 @@ const SmallScreenMenu = () => (
                     <span>blogs</span>
                 </DropdownItem>
             </a>
+            <Link to='/checkout'>
+                <DropdownItem>
+                    <span>Cart</span>
+                </DropdownItem>
+            </Link>
         </DropdownMenu>
     </Dropdown>
 );

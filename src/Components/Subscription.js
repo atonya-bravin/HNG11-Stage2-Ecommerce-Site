@@ -4,7 +4,7 @@
 
 const Subscription = () => {
     return(
-        <div className="mt-[16px] bg-[#342CC0] py-[72px] flex items-center justify-center text-[#FFF]">
+        <div className="bg-[#342CC0] py-[72px] flex items-center justify-center text-[#FFF]">
             <div>
                 <h1 className="font-bold text-[24px] md:text-[32px] text-center">Join Our Community</h1>
                 <div className="flex justify-center">

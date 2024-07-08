@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Cart = () => {
     return(
         <div class="bg-gray-100 h-screen py-8">
-            <div class="container mx-auto px-4">
+            <div class="ui container mx-auto px-4">
                 <h1 class="text-2xl font-semibold mb-4">Shopping Cart</h1>
                 <div class="flex flex-col gap-4">
                     <div>
@@ -58,7 +60,9 @@ const Cart = () => {
                                 <span class="font-semibold">Total</span>
                                 <span class="font-semibold">$21.98</span>
                             </div>
-                            <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">Proceed to Checkout</button>
+                            <Link to='/billing'>
+                                <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">Proceed to Checkout</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -3,18 +3,16 @@
  *  all the other components within the application. 
 */
 
-import FlashSale from "./FlashSale";
+import { Outlet } from "react-router-dom";
 import Footer from "./Footer/Footer";
 import Nav from "./Nav";
-import Products from "./Products";
 import Subscription from "./Subscription";
 
 const OnlineShop = () => {
     return(
         <div>
             <Nav />
-            <FlashSale />
-            <Products />
+            <Outlet />
             <Subscription />
             <Footer />
         </div>
