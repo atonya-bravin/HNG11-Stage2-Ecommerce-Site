@@ -28,7 +28,7 @@ const Products = () => {
             <div className="ui container three stackable cards py-[32px]">
                 {products.map((product)=>(
                     <div class="ui card">
-                        <div class="ui bigimage">
+                        <div className="flex justify-center items-center">
                             <img alt="" src={product.image_URL}/>
                         </div>
                         <div class="content">
