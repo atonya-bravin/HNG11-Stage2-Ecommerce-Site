@@ -4,6 +4,7 @@
 */
 
 import FlashSale from "./FlashSale";
+import Footer from "./Footer/Footer";
 import Nav from "./Nav";
 import Products from "./Products";
 import Subscription from "./Subscription";
@@ -15,6 +16,7 @@ const OnlineShop = () => {
             <FlashSale />
             <Products />
             <Subscription />
+            <Footer />
         </div>
     );
 };
