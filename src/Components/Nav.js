@@ -49,9 +49,10 @@ const Nav = () => {
                         </a>
                     </div>
                     <Link to="/checkout">
-                        <div className="item text-[24px] right-menu-item">
+                        <div className="item text-[24px] right-menu-item cart-container">
                             <a href="/">
                                 <img src="./Resources/Images/Icons/cart.svg" alt="cart"/>
+                                <div className="items-counter font-bold bg-[#342CC0] text-white">4</div>
                             </a>
                         </div> 
                     </Link>                

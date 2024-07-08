@@ -6,6 +6,7 @@ import "semantic-ui-css/semantic.min.css";
 import './Styles/index.css';
 import './Styles/flashSale.css';
 import './Styles/menu.css';
+import './Styles/nav.css';
 import { RouterProvider } from 'react-router-dom';
 import router from './Routes/RoutesConfig';
 
