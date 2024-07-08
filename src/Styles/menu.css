@@ -1,0 +1,28 @@
+/*
+    Making sure that thre is controll of how the elements are spaced in the right menu.
+*/
+.right-menu-item{
+    margin-right: 0px !important;
+    padding-right: .5em !important;
+    padding-left: .5em !important;
+}
+
+/* Making sure that the Nav menu component with the hidden-display id are hidden in large screen */
+@media (min-width: 900px) {
+    #hidden-display{
+        display: none;
+    }
+}
+
+/* Making sure that the Nav components with the hidden-options-display id are hidden in the small screen */
+@media (max-width: 900px) {
+    #hidden-options-display{
+        display: none;
+    }
+}
+
+.nav{
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: black;
+}

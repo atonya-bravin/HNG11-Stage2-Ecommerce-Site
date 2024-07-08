@@ -4,7 +4,8 @@ import App from './Components/OnlineShop';
 import reportWebVitals from './Tests/reportWebVitals';
 import "semantic-ui-css/semantic.min.css";
 import './Styles/index.css';
-import './Styles/flashSale.css'
+import './Styles/flashSale.css';
+import './Styles/menu.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
