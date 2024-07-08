@@ -6,6 +6,7 @@
 import FlashSale from "./FlashSale";
 import Nav from "./Nav";
 import Products from "./Products";
+import Subscription from "./Subscription";
 
 const OnlineShop = () => {
     return(
@@ -13,6 +14,7 @@ const OnlineShop = () => {
             <Nav />
             <FlashSale />
             <Products />
+            <Subscription />
         </div>
     );
 };
