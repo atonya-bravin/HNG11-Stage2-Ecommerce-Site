@@ -4,7 +4,7 @@
 
 const FlashSale = () => {
     return(
-        <div className="ui container">
+        <div className="ui container mt-[16px]">
             <h5 className="font-bold text-[18px] py-[8px]">
                 EXCLUSIVE PERKS
             </h5>
