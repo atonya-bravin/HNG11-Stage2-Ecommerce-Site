@@ -4,10 +4,12 @@
 */
 
 import FlashSale from "./FlashSale";
+import Nav from "./Nav";
 
 const OnlineShop = () => {
     return(
         <div>
+            <Nav />
             <FlashSale />
         </div>
     );
