@@ -1,6 +1,6 @@
 const Billing = () => {
     return(
-        <div class="bg-gray-100 py-8">
+        <div class="py-8">
             <div class="ui container mx-auto px-4">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="md:w-3/4">
