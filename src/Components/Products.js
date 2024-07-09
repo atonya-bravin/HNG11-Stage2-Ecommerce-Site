@@ -43,6 +43,7 @@ const Products = () => {
                                         products[index].ordered_quantity = products[index].ordered_quantity - 1;
                                         products[index].selected = false;
                                         clearItem(product.id, product.name);
+                                        updateProducts(products);
                                     }}
                                 >
                                     <i class="minus icon"></i>
@@ -61,6 +62,7 @@ const Products = () => {
                                                 "shipping": 2.25
                                             }
                                         )
+                                        updateProducts(products);
                                     }}
                                 >
                                     <i class="plus icon"></i>
