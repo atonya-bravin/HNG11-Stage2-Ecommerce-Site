@@ -38,11 +38,14 @@ const Products = () => {
                             <div class="content">
                                 <div class="ui button primary right floated"
                                     onClick={(e)=>{
+                                        products[index].ordered_quantity = products[index].ordered_quantity + 1;
                                         updateOrder(
                                             {
                                                 "numberOfItems": initialOrder.numberOfItems + 1,
                                                 "subTotal": parseInt(initialOrder.subTotal) + parseInt(products[index].price),
-                                                "itemsOnOrder": [...initialOrder.itemsOnOrder, products[index]]
+                                                "itemsOnOrder": [...initialOrder.itemsOnOrder, products[index]],
+                                                "taxes": 1.99,
+                                                "shipping": 2.25
                                             }
                                         )
                                     }}
