@@ -4,7 +4,9 @@ const initializeOrderInformation = () => {
     return({
         "numberOfItems": 0,
         "subTotal": 0,
-        "itemsOnOrder": []
+        "itemsOnOrder": [],
+        "taxes": 1.99,
+        "shipping": 2.25
     });
 }
 
