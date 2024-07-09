@@ -1,35 +1,36 @@
 [{
-    "key": 1,
     "name": "Custom Air force 1",
     "price": 1400,
-    "image_URL": "./Resources/Images/Products/image 38.png"
+    "image_URL": "./Resources/Images/Products/image 38.png",
+    "ordered_quantity": 0
 },
 {
-    "key": 2,
     "name": "ASICS Gel-Cumulus 26",
     "price": 5000,
-    "image_URL": "./Resources/Images/Products/image 40.png"
+    "image_URL": "./Resources/Images/Products/image 40.png",
+    "ordered_quantity": 0
 },
 {
-    "key": 3,
     "name": "New Balance Womens",
     "price": 3500,
-    "image_URL": "./Resources/Images/Products/image 41.png"
+    "image_URL": "./Resources/Images/Products/image 41.png",
+    "ordered_quantity": 0
 },
 {
     "name": "Allbirds Women's Tree Runners",
     "price": 6000,
-    "image_URL": "./Resources/Images/Products/image 43.png"
+    "image_URL": "./Resources/Images/Products/image 43.png",
+    "ordered_quantity": 0
 },
 {
-    "key": 3,
     "name": "New Balance Womens",
     "price": 3500,
-    "image_URL": "./Resources/Images/Products/image 44.png"
+    "image_URL": "./Resources/Images/Products/image 44.png",
+    "ordered_quantity": 0
 },
 {
-    "key": 1,
     "name": "Custom Air force 1",
     "price": 1600,
-    "image_URL": "./Resources/Images/Products/image 45.png"
+    "image_URL": "./Resources/Images/Products/image 45.png",
+    "ordered_quantity": 0
 }]
