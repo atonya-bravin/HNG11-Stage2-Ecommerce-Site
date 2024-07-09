@@ -4,9 +4,11 @@
 
 import { useEffect, useState } from "react";
 import FlashSale from "./FlashSale";
+import { useOutletContext } from "react-router-dom";
 
 const Products = () => {
     const [products, setProducts] = useState([]);
+    const [updateOrder, numberOfItems, itemsOnOrder, subTotal] = useOutletContext();
 
     useEffect(()=>{
         async function fetchData(){
@@ -23,32 +25,42 @@ const Products = () => {
         fetchData();
     },[]);
     return(
-        <div>
-            <FlashSale />
-            <div className="ui container three stackable cards py-[32px]">
-                {products.map((product)=>(
-                    <div class="ui card">
-                        <div className="flex justify-center items-center">
-                            <img alt="" src={product.image_URL}/>
-                        </div>
-                        <div class="content">
-                            <div class="ui button primary right floated">
-                                <i class="plus icon"></i>
-                                Add
+            <div>
+                <FlashSale />
+                <div className="ui container three stackable cards py-[32px]">
+                    {products.map((product, index)=>(
+                        <div key={index} class="ui card">
+                            <div className="flex justify-center items-center">
+                                <img alt="" src={product.image_URL}/>
                             </div>
-                            <div>
-                                <div className="text-[16px]">
-                                    {product.name}
+                            <div class="content">
+                                <div class="ui button primary right floated"
+                                    onClick={(e)=>{
+                                        updateOrder(
+                                            {
+                                                "numberOfItems": numberOfItems + 1,
+                                                "subTotal": parseInt(subTotal) + parseInt(products[index].price),
+                                                "itemsOnOrder": [...itemsOnOrder, products[index]]
+                                            }
+                                        )
+                                    }}
+                                >
+                                    <i class="plus icon"></i>
+                                    Add
                                 </div>
-                                <div className="mt-[8px] font-bold text-[20px]">
-                                    $ {product.price}
+                                <div>
+                                    <div className="text-[16px]">
+                                        {product.name}
+                                    </div>
+                                    <div className="mt-[8px] font-bold text-[20px]">
+                                        $ {product.price}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
     );
 };
 

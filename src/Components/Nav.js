@@ -5,7 +5,7 @@
 import { Link } from "react-router-dom";
 import SmallScreenMenu from "./SmallScreenMenu";
 
-const Nav = () => {
+const Nav = ({numberOfItems}) => {
     return(
         <div className="nav">
             <div className="ui secondary menu container menu">
@@ -52,7 +52,7 @@ const Nav = () => {
                         <div className="item text-[24px] right-menu-item cart-container">
                             <a href="/">
                                 <img src="./Resources/Images/Icons/cart.svg" alt="cart"/>
-                                <div className="items-counter font-bold bg-[#342CC0] text-white">4</div>
+                                <div className="items-counter font-bold bg-[#342CC0] text-white">{numberOfItems}</div>
                             </a>
                         </div> 
                     </Link>                
