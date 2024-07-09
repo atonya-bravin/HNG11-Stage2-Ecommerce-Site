@@ -2,17 +2,16 @@
  * This is the component that showcases the products that are available on the site.
  */
 
-import { useEffect, useState, useContext } from "react";
 import FlashSale from "./FlashSale";
 import { useOutletContext } from "react-router-dom";
 import { productInformationContext } from "../Contexts/ProductsContext";
 
 const Products = () => {
-    const [updateOrder, initialOrder] = useOutletContext();
+    const [updateOrder, initialOrder, updateProducts, products] = useOutletContext();
 
     const clearItem= (indexToRemove, productToRemove) => {
         const updatedProducts = initialOrder.itemsOnOrder.filter(item => item.name !== productToRemove); 
-            
+
         updateOrder(
             {
                 "numberOfItems": initialOrder.numberOfItems - 1,
@@ -26,8 +25,7 @@ const Products = () => {
 
     console.log(initialOrder);
 
-    const productContext = useContext(productInformationContext);
-    const [products, updateProducts] = useState(productContext);
+    
 
     return(
         <productInformationContext.Provider value={products}>

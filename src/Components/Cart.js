@@ -3,18 +3,13 @@ import { useContext, useState } from "react";
 import { productInformationContext } from "../Contexts/ProductsContext";
 
 const Cart = () => {
-    const [updateOrder, initialOrder] = useOutletContext();
-
-    const productContext = useContext(productInformationContext);
-    const [products, updateProducts] = useState(productContext);
+    const [updateOrder, initialOrder, updateProducts, products] = useOutletContext();
 
     const clearItem= (indexToRemove, indexToChange) => {
         const updatedItems = initialOrder.itemsOnOrder.filter((_, index) => index !== indexToRemove);
-        
-        const removedProduct = initialOrder.itemsOnOrder[indexToRemove];
-        
+                
         const updatedProducts = products.map(product => {
-            if (product.id === removedProduct.id) {
+            if (product.id === indexToChange) {
                 return { ...product, selected: false };
             }
             return product;
