@@ -1,0 +1,17 @@
+/*
+    Rules to ensure that the add and remove buttons of specific products are displayed in accordance to the action of the user
+*/
+
+.hiddenButton{
+    display: none !important;
+}
+
+.displayedButton{
+    display: inline !important;
+}
+
+/* The rule to chage the text and background or the subscribe button in the subscription component*/
+.subscribe-button{
+    background-color: #171354 !important;
+    color: white !important;
+}

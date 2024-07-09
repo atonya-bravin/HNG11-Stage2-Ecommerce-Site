@@ -16,7 +16,7 @@ const Subscription = () => {
                 <div className="flex justify-center">
                     <div class="ui action input mt-[20px]">
                         <input type="text" placeholder="Enter Email"/>
-                        <button class="ui button red">Subscribe</button>
+                        <button class="ui button subscribe-button">Subscribe</button>
                     </div>
                 </div>
                 
