@@ -10,13 +10,14 @@ import { productInformationContext } from "../Contexts/ProductsContext";
 const Products = () => {
     const [updateOrder, initialOrder] = useOutletContext();
 
-    const clearItem= (indexToRemove) => {
-        const updatedItems = initialOrder.itemsOnOrder.filter((_, index) => index !== indexToRemove);
+    const clearItem= (indexToRemove, productToRemove) => {
+        const updatedProducts = initialOrder.itemsOnOrder.filter(item => item.name !== productToRemove); 
+            
         updateOrder(
             {
                 "numberOfItems": initialOrder.numberOfItems - 1,
                 "subTotal": parseInt(initialOrder.subTotal) - parseInt(products[indexToRemove].price),
-                "itemsOnOrder": updatedItems,
+                "itemsOnOrder": updatedProducts,
                 "taxes": 1.99,
                 "shipping": 2.25,
             }
@@ -43,7 +44,7 @@ const Products = () => {
                                     onClick={(e)=>{
                                         products[index].ordered_quantity = products[index].ordered_quantity - 1;
                                         products[index].selected = false;
-                                        clearItem(index);
+                                        clearItem(product.id, product.name);
                                     }}
                                 >
                                     <i class="minus icon"></i>
