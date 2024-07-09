@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 
 const Billing = () => {
     const [updateOrder, newOrder] = useOutletContext();
@@ -72,6 +72,9 @@ const Billing = () => {
                                     }
                                 </span>
                             </div>
+                            <Link to='/'>
+                                <button class="border border-width-[1px] border-[#000] py-2 px-4 rounded-lg mt-4 w-full">Continue Shopping</button>
+                            </Link>
                             <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">Purchase Now</button>
                         </div>
                     </div>

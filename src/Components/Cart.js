@@ -112,8 +112,11 @@ const Cart = () => {
                                     initialOrder.subTotal + initialOrder.taxes + initialOrder.shipping
                                 }</span>
                             </div>
+                            <Link to='/'>
+                                <button class="border border-width-[1px] border-[#000] py-2 px-4 rounded-lg mt-4 w-full md:w-[48%]">Continue Shopping</button>
+                            </Link>
                             <Link to='/billing'>
-                                <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">Proceed to Checkout</button>
+                                <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 md:ml-[4%] w-full md:w-[48%]">Proceed to Checkout</button>
                             </Link>
                         </div>
                     </div>
