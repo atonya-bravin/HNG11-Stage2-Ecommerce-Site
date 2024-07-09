@@ -17,7 +17,7 @@ const OnlineShop = () => {
     return(
         <div>
             <Nav numberOfItems={newOrder.numberOfItems}/>
-            <Outlet context={[updateOrder, newOrder.numberOfItems, newOrder.itemsOnOrder, newOrder.subTotal]}/>
+            <Outlet context={[updateOrder, newOrder]}/>
             <Subscription />
             <Footer />
         </div>

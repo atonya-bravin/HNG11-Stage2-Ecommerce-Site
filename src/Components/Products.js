@@ -8,7 +8,9 @@ import { useOutletContext } from "react-router-dom";
 
 const Products = () => {
     const [products, setProducts] = useState([]);
-    const [updateOrder, numberOfItems, itemsOnOrder, subTotal] = useOutletContext();
+    const [updateOrder, initialOrder] = useOutletContext();
+
+    console.log(initialOrder)
 
     useEffect(()=>{
         async function fetchData(){
@@ -38,9 +40,9 @@ const Products = () => {
                                     onClick={(e)=>{
                                         updateOrder(
                                             {
-                                                "numberOfItems": numberOfItems + 1,
-                                                "subTotal": parseInt(subTotal) + parseInt(products[index].price),
-                                                "itemsOnOrder": [...itemsOnOrder, products[index]]
+                                                "numberOfItems": initialOrder.numberOfItems + 1,
+                                                "subTotal": parseInt(initialOrder.subTotal) + parseInt(products[index].price),
+                                                "itemsOnOrder": [...initialOrder.itemsOnOrder, products[index]]
                                             }
                                         )
                                     }}
