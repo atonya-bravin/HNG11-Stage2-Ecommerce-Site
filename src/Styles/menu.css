@@ -24,5 +24,32 @@
 .nav{
     border-style: solid;
     border-width: 0px 0px 2px 0px;
-    border-color: black;
+    border-color: #C4C1FA;
+}
+
+/* The cart is made relative to make sure it can bound all the absolute elements within it. */
+.cart-container{
+    position: relative;
+}
+
+/* Changing the display to absolute to make sure we can change its position within the parent element. Also there is an inclusion of a border around it. */
+.items-counter{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 16px;
+    border: solid;
+    border-width: 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*Rule to make sure that the link color does not change.*/
+a:hover{
+    color: black;
 }
