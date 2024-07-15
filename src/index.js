@@ -10,7 +10,7 @@ import './Styles/buttons.css';
 import { RouterProvider } from 'react-router-dom';
 import router from './Routes/RoutesConfig';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')); 
 root.render(
     <RouterProvider router={router}>
         <App />
